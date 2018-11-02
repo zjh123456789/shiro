@@ -8,12 +8,34 @@ package pers.zjh;
 
 public class User {
 
+    private Integer id;
+    private String salt;
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     private String name;
     private String password;
 
     public User(String name, String password) {
         this.name = name;
         this.password = password;
+    }
+
+    public User() {
     }
 
     public String getName() {
